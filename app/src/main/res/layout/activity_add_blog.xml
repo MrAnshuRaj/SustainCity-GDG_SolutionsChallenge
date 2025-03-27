@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:id="@+id/main"
+    android:background="#F1F8E9"
+    tools:context=".AddBlogActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Title Input -->
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Blog Title"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Content Input -->
+        <EditText
+            android:id="@+id/etContent"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:hint="Write your blog content..."
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:gravity="top"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="10dp"
+            android:inputType="textMultiLine"
+            android:scrollbars="vertical"/>
+
+        <!-- Image Upload Button -->
+        <Button
+            android:id="@+id/btnUploadImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload Image"
+            android:textSize="16sp"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Image Preview -->
+        <ImageView
+            android:id="@+id/ivBlogImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:visibility="gone"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="10dp"
+            android:background="@android:drawable/ic_menu_gallery"/>
+
+        <!-- Submit Blog Button -->
+        <Button
+            android:id="@+id/btnSubmitBlog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Publish Blog"
+            android:textSize="16sp"
+            android:backgroundTint="#388E3C"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+</ScrollView>

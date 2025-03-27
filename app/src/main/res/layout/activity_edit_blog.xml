@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Blog Image Preview -->
+        <ImageView
+            android:id="@+id/ivBlogImagePreview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:background="@android:drawable/gallery_thumb" />
+
+        <!-- Change Image Button -->
+        <Button
+            android:id="@+id/btnChangeImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Image"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/green"
+            android:padding="8dp"
+            />
+
+        <!-- Blog Title Input -->
+        <EditText
+            android:id="@+id/etBlogTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Blog Title"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:background="@android:drawable/editbox_background" />
+
+        <!-- Blog Content Input -->
+        <EditText
+            android:id="@+id/etBlogContent"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:hint="Enter Blog Content"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:background="@android:drawable/editbox_background"
+            android:gravity="top"
+            android:inputType="textMultiLine" />
+
+        <!-- Save Changes Button -->
+        <Button
+            android:id="@+id/btnSaveChanges"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Changes"
+            android:backgroundTint="@color/green"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="10dp"
+            android:padding="12dp" />
+    </LinearLayout>
+
+</ScrollView>

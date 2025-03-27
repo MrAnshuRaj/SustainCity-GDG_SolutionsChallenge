@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:id="@+id/main"
+    android:background="#F5F5F5">
+
+    <!-- Add New Rental Bike -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Rental Bike/Bicycle"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#2E7D32"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/etBikeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Bike/Bicycle Name"
+        android:background="@android:drawable/editbox_background"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/etBikeType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type (e.g., Bicycle, Electric Bike)"
+        android:background="@android:drawable/editbox_background"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/etBikePrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Rental Price per Hour"
+        android:inputType="numberDecimal"
+        android:background="@android:drawable/editbox_background"
+        android:padding="10dp"/>
+
+    <!-- Upload Image -->
+    <Button
+        android:id="@+id/btnUploadImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload Bike Image"
+        android:backgroundTint="#388E3C"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/ivBikeImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/btnSubmitBike"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit for Rental"
+        android:backgroundTint="#2E7D32"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"/>
+
+    <!-- List of Bikes -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Available Rental Bikes"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#2E7D32"
+        android:layout_marginTop="20dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvBikeList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="10dp"/>
+    <Button
+        android:id="@+id/btnLogOutBusiness"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="Log Out"
+        android:backgroundTint="#8F0700"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

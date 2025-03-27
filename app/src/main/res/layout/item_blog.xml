@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:background="@android:drawable/editbox_background"
+    android:layout_margin="8dp">
+
+    <!-- Blog Image -->
+    <ImageView
+        android:id="@+id/ivBlogImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        android:background="@android:drawable/gallery_thumb" />
+
+    <!-- Blog Title -->
+    <TextView
+        android:id="@+id/tvBlogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#2E7D32"
+        android:textStyle="bold"
+        android:paddingTop="8dp"
+        android:text="Blog Title" />
+
+    <!-- Blog Content -->
+    <TextView
+        android:id="@+id/tvBlogContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:textSize="14sp"
+        android:textColor="#333333"
+        android:paddingTop="4dp"
+        android:text="Short content preview..." />
+
+    <!-- Blog Author and Date -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="6dp">
+
+        <TextView
+            android:id="@+id/tvBlogAuthor"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#666666"
+            android:text="By Author Name" />
+
+        <TextView
+            android:id="@+id/tvBlogDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#666666"
+            android:text="Date" />
+    </LinearLayout>
+
+    <!-- NGO Controls (Edit & Delete) -->
+    <LinearLayout
+        android:id="@+id/ngoActions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:visibility="gone"
+        android:paddingTop="8dp">
+
+        <ImageButton
+            android:id="@+id/btnEditBlog"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@android:drawable/ic_menu_edit"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="5dp"
+            android:contentDescription="Edit Blog" />
+
+        <ImageButton
+            android:id="@+id/btnDeleteBlog"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@android:drawable/ic_delete"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="5dp"
+            android:contentDescription="Delete Blog" />
+    </LinearLayout>
+
+</LinearLayout>

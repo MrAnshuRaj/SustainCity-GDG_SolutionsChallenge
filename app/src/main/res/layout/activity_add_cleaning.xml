@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <EditText
+        android:id="@+id/et_event_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Event Name"
+        android:textSize="16sp"
+        android:padding="12dp"
+        />
+
+    <EditText
+        android:id="@+id/et_event_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date (YYYY-MM-DD)"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/et_event_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Location"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/btn_create_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Event"
+        android:textSize="18sp"
+        android:backgroundTint="@color/green"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

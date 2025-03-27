@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="@color/light_green"
+    tools:context=".NGODashboardActivity">
+
+    <TextView
+        android:id="@+id/tv_dashboard_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NGO Dashboard"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#006D06"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/btn_add_food"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Food for Distribution"
+        android:backgroundTint="@color/green"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/tv_dashboard_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <Button
+        android:id="@+id/btn_manage_events"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manage Cleaning Events"
+        android:backgroundTint="@color/green"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/btn_add_food"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <Button
+        android:id="@+id/btn_manage_blogs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/green"
+        android:text="Manage Blogs"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_manage_events" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_food_items"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonlogout" />
+
+    <Button
+        android:id="@+id/buttonlogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="#840000"
+        android:text="Log Out"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_manage_blogs" />
+</androidx.constraintlayout.widget.ConstraintLayout>

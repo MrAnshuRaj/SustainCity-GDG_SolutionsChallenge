@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@android:drawable/editbox_background"
+    android:layout_margin="8dp">
+
+    <!-- Food Image -->
+    <ImageView
+        android:id="@+id/ivFoodImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:background="@android:drawable/gallery_thumb" />
+
+    <!-- Food Name -->
+    <TextView
+        android:id="@+id/tvFoodName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#2E7D32"
+        android:textStyle="bold"
+        android:paddingTop="8dp"
+        android:text="Food Name" />
+
+    <!-- Food Quantity -->
+    <TextView
+        android:id="@+id/tvFoodQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#333333"
+        android:paddingTop="4dp"
+        android:text="Quantity: 10 kg" />
+
+    <!-- Food Expiry Date -->
+    <TextView
+        android:id="@+id/tvFoodExpiry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#D84315"
+        android:paddingTop="4dp"
+        android:text="Expires on: 20th March" />
+
+    <!-- Food Location -->
+    <TextView
+        android:id="@+id/tvFoodLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#333333"
+        android:paddingTop="4dp"
+        android:text="Pickup Location: XYZ Center" />
+
+    <!-- Navigate Button -->
+    <Button
+        android:id="@+id/btnNavigate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Navigate to Location"
+        android:textColor="#FFFFFF"
+      android:backgroundTint="@color/black"
+        android:padding="8dp"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Pickup Button -->
+    <Button
+        android:id="@+id/btnPickup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mark as Picked Up"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="@color/black"
+        android:padding="8dp"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8F5E9"
+    android:id="@+id/main"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Donate Food"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#388E3C"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/etFoodName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Food Name"
+            android:background="@android:color/white"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/etQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Quantity (e.g., 5 meals)"
+            android:background="@android:color/white"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/etExpiryDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Best Before (YYYY-MM-DD)"
+            android:background="@android:color/white"
+            android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/btnSelectLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Location on Map"
+            android:backgroundTint="#4CAF50"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/tvSelectedLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No location selected"
+            android:textColor="#333"
+            android:paddingTop="8dp"/>
+
+        <ImageView
+            android:id="@+id/ivFoodImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btnUploadImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload Food Image"
+            android:backgroundTint="#4CAF50"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btnSubmitFoodDonation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Donation"
+            android:backgroundTint="#388E3C"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+</ScrollView>
