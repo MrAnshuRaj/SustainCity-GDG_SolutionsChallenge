@@ -1,0 +1,118 @@
+.blog-container {
+    max-width: 700px; /* Slightly wider for better readability */
+    margin: 100px auto 50px;
+    padding: 25px;
+    background: #ffffff; /* Clean white background */
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    margin-top: 150px;
+}
+
+.blog-container:hover {
+    transform: scale(1.02); /* Slight pop-out effect on hover */
+}
+
+h2 {
+    color: #2d6a4f; /* Soothing deep green */
+    font-size: 26px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.blog-list {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.blog-list .blog-item {
+    background: #f0f8f4; /* Light pastel green */
+    padding: 18px;
+    margin-bottom: 12px;
+    border-left: 6px solid #52b788; /* Softer green for a modern look */
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.blog-list .blog-item:hover {
+    background: #d8f3dc; /* Lighter hover effect */
+    border-left-color: #40916c; /* Darker green */
+}
+
+.blog-input-section {
+    margin-top: 25px;
+    padding: 22px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease-in-out;
+}
+
+.blog-input-section:hover {
+    transform: scale(1.01); /* Slight pop-up on hover */
+}
+
+label {
+    font-weight: 600;
+    display: block;
+    text-align: left;
+    margin: 12px 0 6px;
+    font-size: 16px;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    color: #2d6a4f;
+    background: #f9f9f9;
+    border: 1px solid #b7e4c7;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #52b788;
+    outline: none;
+}
+
+textarea {
+    height: 140px;
+}
+
+button {
+    background-color: #52b788; /* Modern green */
+    color: white;
+    padding: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: bold;
+    width: 100%;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #40916c;
+    transform: scale(1.02);
+}
+
+.image-preview {
+    width: 100%;
+    max-height: 320px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 12px;
+    border: 2px solid #b7e4c7;
+    transition: transform 0.3s ease;
+}
+
+.image-preview:hover {
+    transform: scale(1.03);
+}
