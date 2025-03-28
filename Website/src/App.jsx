@@ -1,5 +1,5 @@
-import { BrowserRouter as Router, Route, Routes, Link, useNavigate } from 'react-router-dom';
-import { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes, Link, useNavigate, useLocation } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 import './App.css';
 import SustainCityLogo from './SustainCity..png';
 
@@ -68,9 +68,20 @@ function Navbar() {
   );
 }
 
+function ScrollToTop({ children })
+{
+  const location = useLocation();
+
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  },[location]);
+  return <>{children}</>
+}
+
 function App() {
   return (
     <Router>
+    <ScrollToTop>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -86,6 +97,7 @@ function App() {
         <Route path="/ngo-dashboard" element={<NGODashboard />} />
         <Route path="/rental-dashboard" element={<RentalServiceDashboard />} />
       </Routes>
+    </ScrollToTop>
     </Router>
   );
 }
