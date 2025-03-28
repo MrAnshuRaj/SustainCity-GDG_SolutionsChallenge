@@ -7,6 +7,13 @@
     android:id="@+id/main"
     android:gravity="center">
 
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/sustainlogo"
+        android:layout_marginBottom="16dp"
+        android:scaleType="fitXY"
+        />
     <EditText
         android:id="@+id/etName"
         android:layout_width="match_parent"

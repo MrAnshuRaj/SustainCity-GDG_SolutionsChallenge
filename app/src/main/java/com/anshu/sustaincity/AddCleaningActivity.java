@@ -19,7 +19,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class AddCleaningActivity extends AppCompatActivity {
-    private EditText etEventName, etEventDate, etEventLocation;
+    private EditText etEventName, etEventDate, etEventLocation,etEventDescription;
     private Button btnCreateEvent;
     private FirebaseFirestore db;
     @Override
@@ -38,6 +38,7 @@ public class AddCleaningActivity extends AppCompatActivity {
         etEventName = findViewById(R.id.et_event_name);
         etEventDate = findViewById(R.id.et_event_date);
         etEventLocation = findViewById(R.id.et_event_location);
+        etEventDescription=findViewById(R.id.et_event_desc);
         btnCreateEvent = findViewById(R.id.btn_create_event);
 
         // Create Event Button Click
@@ -47,6 +48,7 @@ public class AddCleaningActivity extends AppCompatActivity {
     private void createEvent() {
         String name = etEventName.getText().toString().trim();
         String date = etEventDate.getText().toString().trim();
+        String description = etEventDescription.getText().toString().trim();
         String location = etEventLocation.getText().toString().trim();
 
         if (TextUtils.isEmpty(name) || TextUtils.isEmpty(date) || TextUtils.isEmpty(location)) {
@@ -55,7 +57,8 @@ public class AddCleaningActivity extends AppCompatActivity {
         }
 
         Map<String, Object> event = new HashMap<>();
-        event.put("name", name);
+        event.put("title", name);
+        event.put("description", description);
         event.put("date", date);
         event.put("location", location);
 

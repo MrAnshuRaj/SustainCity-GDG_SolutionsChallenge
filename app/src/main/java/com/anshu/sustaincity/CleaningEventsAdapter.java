@@ -10,17 +10,21 @@ import android.widget.TextView;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.List;
 
 public class CleaningEventsAdapter extends RecyclerView.Adapter<CleaningEventsAdapter.EventViewHolder> {
     private List<CleaningEvent> events;
     private Context context;
+    FirebaseAuth mAuth;
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
 
     public CleaningEventsAdapter(List<CleaningEvent> events, Context context) {
         this.events = events;
         this.context = context;
+        mAuth=FirebaseAuth.getInstance();
     }
 
     @NonNull
@@ -34,6 +38,7 @@ public class CleaningEventsAdapter extends RecyclerView.Adapter<CleaningEventsAd
     public void onBindViewHolder(@NonNull EventViewHolder holder, int position) {
         CleaningEvent event = events.get(position);
         holder.tvTitle.setText(event.getTitle());
+        Toast.makeText(context,"Event Title: "+event.getTitle()+"Event desc"+event.getDescription(),Toast.LENGTH_SHORT).show();
         holder.tvDescription.setText(event.getDescription());
         holder.tvDate.setText("Date: " + event.getDate());
 
@@ -41,7 +46,7 @@ public class CleaningEventsAdapter extends RecyclerView.Adapter<CleaningEventsAd
     }
 
     private void joinEvent(CleaningEvent event) {
-        String userId = "USER_ID"; // Replace with actual user ID
+        String userId = mAuth.getUid(); // Replace with actual user ID
         db.collection("cleaning_events").document(event.getId())
                 .collection("participants").document(userId)
                 .set(new Participant(userId))

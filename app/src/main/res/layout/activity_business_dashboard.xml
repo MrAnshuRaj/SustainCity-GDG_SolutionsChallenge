@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -8,92 +14,119 @@
     android:background="#F5F5F5">
 
     <!-- Add New Rental Bike -->
+
+    <!-- Upload Image -->
+
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Add Rental Bike/Bicycle"
+        android:textColor="#2E7D32"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:textColor="#2E7D32"
-        android:layout_marginBottom="8dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/etBikeName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Bike/Bicycle Name"
         android:background="@android:drawable/editbox_background"
-        android:padding="10dp"/>
+        android:hint="Bike/Bicycle Name"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
         android:id="@+id/etBikeType"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Type (e.g., Bicycle, Electric Bike)"
         android:background="@android:drawable/editbox_background"
-        android:padding="10dp"/>
+        android:hint="Type (e.g., Bicycle, Electric Bike)"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etBikeName" />
 
     <EditText
         android:id="@+id/etBikePrice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
         android:hint="Rental Price per Hour"
         android:inputType="numberDecimal"
-        android:background="@android:drawable/editbox_background"
-        android:padding="10dp"/>
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etBikeType" />
 
-    <!-- Upload Image -->
     <Button
         android:id="@+id/btnUploadImage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Upload Bike Image"
         android:backgroundTint="#388E3C"
+        android:text="Upload Bike Image"
         android:textColor="#FFFFFF"
-        android:layout_marginTop="10dp"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etBikePrice" />
 
     <ImageView
         android:id="@+id/ivBikeImage"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="150dp"
         android:scaleType="centerCrop"
-        android:visibility="gone"
-        android:layout_marginTop="8dp"/>
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnUploadImage" />
 
     <!-- Submit Button -->
+
+    <!-- List of Bikes -->
     <Button
         android:id="@+id/btnSubmitBike"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Submit for Rental"
         android:backgroundTint="#2E7D32"
+        android:text="Submit for Rental"
         android:textColor="#FFFFFF"
-        android:layout_marginTop="10dp"/>
+        app:layout_constraintTop_toBottomOf="@+id/ivBikeImage"
+        tools:layout_editor_absoluteX="34dp" />
 
-    <!-- List of Bikes -->
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:text="Available Rental Bikes"
+        android:textColor="#2E7D32"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:textColor="#2E7D32"
-        android:layout_marginTop="20dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSubmitBike" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvBikeList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginTop="10dp"/>
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:layout_editor_absoluteX="16dp" />
+
     <Button
         android:id="@+id/btnLogOutBusiness"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:text="Log Out"
+        android:layout_marginTop="3dp"
         android:backgroundTint="#8F0700"
+        android:text="Log Out"
         android:textColor="#FFFFFF"
-        android:layout_marginTop="10dp"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvBikeList"
+        tools:layout_editor_absoluteX="16dp" />
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

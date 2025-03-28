@@ -1,6 +1,7 @@
 package com.anshu.sustaincity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -90,6 +91,10 @@ public class LoginActivity extends AppCompatActivity {
                         DocumentSnapshot document = task.getResult();
                         if (document.exists()) {
                             String role = document.getString("role");
+                            SharedPreferences sharedPreferences = getSharedPreferences("SustainCity", MODE_PRIVATE);
+                            SharedPreferences.Editor editor = sharedPreferences.edit();
+                            editor.putString("role",role);
+                            editor.apply();
                             navigateToDashboard(role);
                         } else {
                             Toast.makeText(LoginActivity.this, "User data not found", Toast.LENGTH_LONG).show();

@@ -5,17 +5,15 @@ public class CleaningEvent {
     private String title;
     private String description;
     private String date;
-    private double latitude;
-    private double longitude;
+   private String location;
 
     public CleaningEvent() {} // Required for Firestore
 
-    public CleaningEvent(String title, String description, String date, double latitude, double longitude) {
+    public CleaningEvent(String title, String description, String date, String location) {
         this.title = title;
         this.description = description;
         this.date = date;
-        this.latitude = latitude;
-        this.longitude = longitude;
+        this.location = location;
     }
 
     // Getters and Setters
@@ -24,6 +22,5 @@ public class CleaningEvent {
     public String getTitle() { return title; }
     public String getDescription() { return description; }
     public String getDate() { return date; }
-    public double getLatitude() { return latitude; }
-    public double getLongitude() { return longitude; }
+   public String getLocation() { return location; }
 }
