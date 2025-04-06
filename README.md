@@ -44,3 +44,33 @@ It empowers citizens to **report pollution**, **donate leftover food**, **volunt
 1. **Clone the Repository**
    ```bash
    git clone https://github.com/yourusername/sustaincity.git
+
+2. **Open Project in Android Studio**
+
+3. **Launch Android Studio.**
+
+4. **Click on “Open an existing project”.**
+
+5. **Select the sustaincity project folder.**
+
+6. **Let Gradle sync (Internet connection required).**
+
+7. **Run the App**
+
+8. **Connect an Android device or start an emulator.**
+
+9. **Press the green "Run" button or use Shift + F10.**
+
+⚠️ Make sure you have the latest Android SDK and tools installed.
+
+### Website Setup
+1. **Navigate to the Web Folder**
+  ```bash
+  cd frontend_cities
+
+2. **Install Dependencies**
+   ```bash
+   npm install
+3. **Run the Development Server**
+  ```bash
+  npm run dev
