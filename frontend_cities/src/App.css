@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 html, body {
@@ -26,4 +25,19 @@ html, body {
 .page-content {
   flex-grow: 1;
   padding: 20px;
+}
+.MainImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.MainImage img {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  object-fit: contain;
 }

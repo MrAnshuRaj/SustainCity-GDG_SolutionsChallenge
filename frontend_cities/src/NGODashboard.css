@@ -2,9 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 150px); /* Ensures full viewport height minus 150px */
+    height: calc(100vh - 150px); 
     background-color: #f0f8f4;
-    margin-top: 330px; /* Moves the entire section down */
+    margin-top: 330px; 
 }
 
 .ngo-dashboard {
@@ -27,14 +27,14 @@ h1 {
 .section {
     margin-bottom: 20px;
     padding: 15px;
-    border: 1px solid #b7e4c7; /* Light Green Border */
+    border: 1px solid #b7e4c7; 
     border-radius: 8px;
-    background-color: #d8f3dc; /* Soft Green Background */
+    background-color: #d8f3dc; 
 }
 
 .section h2 {
     margin-bottom: 10px;
-    color: #40916c; /* Calm Green */
+    color: #40916c; 
     text-align: center;
 }
 
@@ -42,13 +42,13 @@ input {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #a3b18a; /* Muted Green Border */
+    border: 1px solid #a3b18a; 
     border-radius: 5px;
     font-size: 16px;
 }
 
 button {
-    background-color: #40916c; /* Primary Green */
+    background-color: #40916c; 
     color: white;
     border: none;
     padding: 10px;
@@ -59,5 +59,5 @@ button {
 }
 
 button:hover {
-    background-color: #2d6a4f; /* Darker Green on Hover */
+    background-color: #2d6a4f; 
 }

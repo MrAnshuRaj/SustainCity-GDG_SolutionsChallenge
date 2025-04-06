@@ -59,7 +59,7 @@ const ReadSustainabilityBlogs = () => {
         )}
       </div>
 
-      {/* Upload Blog Section */}
+      
       <div className="blog-upload">
         <h3>Upload Your Blog</h3>
         <form onSubmit={handleSubmit}>

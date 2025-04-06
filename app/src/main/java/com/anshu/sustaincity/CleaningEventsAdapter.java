@@ -38,7 +38,7 @@ public class CleaningEventsAdapter extends RecyclerView.Adapter<CleaningEventsAd
     public void onBindViewHolder(@NonNull EventViewHolder holder, int position) {
         CleaningEvent event = events.get(position);
         holder.tvTitle.setText(event.getTitle());
-        Toast.makeText(context,"Event Title: "+event.getTitle()+"Event desc"+event.getDescription(),Toast.LENGTH_SHORT).show();
+        //Toast.makeText(context,"Event Title: "+event.getTitle()+"Event desc"+event.getDescription(),Toast.LENGTH_SHORT).show();
         holder.tvDescription.setText(event.getDescription());
         holder.tvDate.setText("Date: " + event.getDate());
 

@@ -2,9 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 150px); /* Ensures full viewport height minus 150px */
+    height: calc(100vh - 150px); 
     background-color: #f0f8f4;
-    margin-top: 150px; /* Moves the entire section down */
+    margin-top: 150px; 
 }
 
 .rental-dashboard {
@@ -20,7 +20,7 @@
 
 h1 {
     text-align: center;
-    color: #2d6a4f; /* Deep Green */
+    color: #2d6a4f; 
     margin-bottom: 20px;
 }
 
@@ -33,13 +33,13 @@ input {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #a3b18a; /* Muted Green Border */
+    border: 1px solid #a3b18a; 
     border-radius: 5px;
     font-size: 16px;
 }
 
 button {
-    background-color: #52b788; /* Soft Green */
+    background-color: #52b788; 
     color: white;
     border: none;
     padding: 10px;
@@ -50,5 +50,5 @@ button {
 }
 
 button:hover {
-    background-color: #40916c; /* Darker Green on Hover */
+    background-color: #40916c; 
 }

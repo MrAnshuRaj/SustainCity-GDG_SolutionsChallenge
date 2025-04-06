@@ -11,13 +11,13 @@ function ViewCleaningEvents() {
         <h3>Events for Hunger</h3>
         <div className="event-box">
           <p>Food Drive for the Homeless</p>
-          <Link to="/register-volunteer">Register as Volunteer</Link>
-          <Link to="/donate-charity">Donate for Charity</Link>
+          <Link to="/website/register-volunteer">Register as Volunteer</Link>
+          <Link to="/website/donate-charity">Donate for Charity</Link>
         </div>
         <div className="event-box">
           <p>Community Kitchen Initiative</p>
-          <Link to="/register-volunteer">Register as Volunteer</Link>
-          <Link to="/donate-charity">Donate for Charity</Link>
+          <Link to="/website/register-volunteer">Register as Volunteer</Link>
+          <Link to="/website/donate-charity">Donate for Charity</Link>
         </div>
       </div>
 
@@ -25,8 +25,8 @@ function ViewCleaningEvents() {
         <h3>Events for Sanitation</h3>
         <div className="event-box">
           <p>Public Toilet Maintenance Drive</p>
-          <Link to="/register-volunteer">Register as Volunteer</Link>
-          <Link to="/donate-charity">Donate for Charity</Link>
+          <Link to="/website/register-volunteer">Register as Volunteer</Link>
+          <Link to="/website/donate-charity">Donate for Charity</Link>
         </div>
       </div>
 
@@ -34,8 +34,8 @@ function ViewCleaningEvents() {
         <h3>Blood Donation Events</h3>
         <div className="event-box">
           <p>Annual Blood Donation Camp</p>
-          <Link to="/register-volunteer">Register as Volunteer</Link>
-          <Link to="/donate-charity">Donate for Charity</Link>
+          <Link to="/website/register-volunteer">Register as Volunteer</Link>
+          <Link to="/website/donate-charity">Donate for Charity</Link>
         </div>
       </div>
 
@@ -43,8 +43,8 @@ function ViewCleaningEvents() {
         <h3>Cleaning Events</h3>
         <div className="event-box">
           <p>Beach Cleanup Drive</p>
-          <Link to="/register-volunteer">Register as Volunteer</Link>
-          <Link to="/donate-charity">Donate for Charity</Link>
+          <Link to="/website/register-volunteer">Register as Volunteer</Link>
+          <Link to="/website/donate-charity">Donate for Charity</Link>
         </div>
       </div>
     </div>

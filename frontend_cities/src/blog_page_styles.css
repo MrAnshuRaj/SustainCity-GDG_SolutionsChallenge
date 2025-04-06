@@ -1,8 +1,8 @@
 .blog-container {
-    max-width: 700px; /* Slightly wider for better readability */
+    max-width: 700px; 
     margin: 100px auto 50px;
     padding: 25px;
-    background: #ffffff; /* Clean white background */
+    background: #ffffff; 
     border-radius: 12px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     text-align: center;
@@ -11,11 +11,11 @@
 }
 
 .blog-container:hover {
-    transform: scale(1.02); /* Slight pop-out effect on hover */
+    transform: scale(1.02); 
 }
 
 h2 {
-    color: #2d6a4f; /* Soothing deep green */
+    color: #2d6a4f; 
     font-size: 26px;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -29,17 +29,17 @@ h2 {
 }
 
 .blog-list .blog-item {
-    background: #f0f8f4; /* Light pastel green */
+    background: #f0f8f4; 
     padding: 18px;
     margin-bottom: 12px;
-    border-left: 6px solid #52b788; /* Softer green for a modern look */
+    border-left: 6px solid #52b788; 
     border-radius: 8px;
     transition: all 0.3s ease;
 }
 
 .blog-list .blog-item:hover {
-    background: #d8f3dc; /* Lighter hover effect */
-    border-left-color: #40916c; /* Darker green */
+    background: #d8f3dc; 
+    border-left-color: #40916c; 
 }
 
 .blog-input-section {
@@ -52,7 +52,7 @@ h2 {
 }
 
 .blog-input-section:hover {
-    transform: scale(1.01); /* Slight pop-up on hover */
+    transform: scale(1.01); 
 }
 
 label {
@@ -86,7 +86,7 @@ textarea {
 }
 
 button {
-    background-color: #52b788; /* Modern green */
+    background-color: #52b788; 
     color: white;
     padding: 14px;
     border: none;

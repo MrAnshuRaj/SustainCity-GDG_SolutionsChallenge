@@ -1,9 +1,11 @@
 package com.anshu.sustaincity;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -13,8 +15,11 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class VolunteerDashboardActivity extends AppCompatActivity {
     private CardView cardViewEvents, cardViewDonations;
+    Button lgBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +49,14 @@ public class VolunteerDashboardActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        lgBtn = findViewById(R.id.btnLogoutV);
+        lgBtn.setOnClickListener(v->{
+            FirebaseAuth.getInstance().signOut();
+            SharedPreferences sharedPreferences = getSharedPreferences("SustainCity", MODE_PRIVATE);
+            sharedPreferences.edit().remove("user_type").apply();
+            Toast.makeText(VolunteerDashboardActivity.this, "Logged out!", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(this, LoginActivity.class));
+            finish();
+        });
     }
 }
