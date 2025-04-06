@@ -43,34 +43,37 @@ It empowers citizens to **report pollution**, **donate leftover food**, **volunt
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/sustaincity.git
+   git clone https://github.com/MrAnshuRaj/SustainCity-GDG_SolutionsChallenge.git
 
 2. **Open Project in Android Studio**
 
-3. **Launch Android Studio.**
+    - Launch Android Studio.
+    
+    - Click on “Open an existing project”.
+    
+    - Select the sustaincity project folder.
+    
+    - Let Gradle sync (Internet connection required).
 
-4. **Click on “Open an existing project”.**
+3. **Run the App**
 
-5. **Select the sustaincity project folder.**
-
-6. **Let Gradle sync (Internet connection required).**
-
-7. **Run the App**
-
-8. **Connect an Android device or start an emulator.**
-
-9. **Press the green "Run" button or use Shift + F10.**
-
-⚠️ Make sure you have the latest Android SDK and tools installed.
+    - Connect an Android device or start an emulator.
+    - Press the green "Run" button or use Shift + F10.
+    - ⚠️ Make sure you have the latest Android SDK and tools installed.
 
 ### Website Setup
 1. **Navigate to the Web Folder**
-  ```bash
-  cd frontend_cities
+    ```bash
+    cd frontend_cities
 
 2. **Install Dependencies**
-   ```bash
-   npm install
+     ```bash
+     npm install
 3. **Run the Development Server**
-  ```bash
-  npm run dev
+    ```bash
+    npm run dev
+
+---
+
+## With ❤️ from Team HackBusters from NIT Jamshedpur
+### For any queries feek free to contact us at anshurajwork@gmail.com
